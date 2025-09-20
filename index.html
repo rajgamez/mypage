@@ -1,0 +1,63 @@
+<!-- made by @alcoolique & edited by @decal. -->
+<!-- snow.js @ https://codepen.io/massiebn/pen/OJMbXz -->
+<!-- built onto https://wya.lol/$ by @decal. -->
+<!-- changes: added new view counter, fixed and added new container for badges, snow effect, real time discord profile tracker, new svg icons with rewritten css, typewriter effect on bio, fixed css errors + added sound off button to main container-->
+<!-- dm @decal. on discord for src if interested. all template credits to @alcoolique taken from wya.lol -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>clu.ng</title>
+    <meta name="theme-color" content="#000001">
+    <link rel="stylesheet" href="public/users/css/cat.css">
+    <link rel="icon" href="public\src\img\1281904753252765717.png" type="image/x-icon">
+    <link rel="shortcut icon" href="public\src\img\1281904753252765717.png" type="image/x-icon"> 
+    <meta content="#000001" data-react-helmet="true" name="theme-color" />
+</head>
+<script src="snow.js"></script>
+<script src="effects.js"></script>
+<script src="effects2.js"></script>
+<script src="view.js"></script>
+<body>
+
+    <div id="overlay">
+        <button class="overlaybtn" onclick="removeOverlay()">𝕰𝖓𝖙𝖊𝖗</button>
+    </div>
+
+    <div id="user-page">
+
+        <video class="background" autoplay loop muted playsinline draggable="false">
+			<source src="./r2.wya.lol/banner.mp4" type="video/mp4">
+			Your browser does not support the video tag.
+        </video>
+
+        <div class="main-container" id="mainDiv">
+
+            <div class="profile-container">
+                <img class="pp" src="./r2.wya.lol/pp.png" draggable="false">
+                <p class="username breathing" data-tooltip="uid: 1">5ive</p>
+
+                <div class="badges-container">
+                    <div class="badges pic-badge" id="rich "data-tooltip="RICH" style="background-image: url('public/src/badges/nq.png');"></div>
+                </div>
+
+                <div class="bio-container">
+                    <div class="bio typewriter"></div>
+                </div>
+                <div class="pre-container">
+                    <div class="pre">
+                        <div class="cropped">
+                            <img draggable="false" id="rpc">
+                        </div>
+                    </div>
+                </div>
+
+    <audio id="backgroundsong" src="./r2.wya.lol/music.mp3" loop></audio>
+
+</body>
+
+</html>
+
